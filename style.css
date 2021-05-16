@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, rgb(27, 79, 221), rgb(68, 97, 167));
+  min-height: 100vh;
+  color: white;
+}
+header {
+  font-size: 1.5rem;
+}
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input,
+button {
+  border: none;
+  font-size: 1.5rem;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+form button {
+  background: rgb(36, 49, 238);
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+form button:hover {
+  background: white;
+  color: rgb(36, 49, 238);
+}
+.ul-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  min-width: 26%;
+  list-style: none;
+}
+.todo {
+  margin: 1rem;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+.todo li {
+  flex: 1;
+}
+.check-btn,
+.remove-btn {
+  border: none;
+  background: rgb(36, 49, 238);
+  cursor: pointer;
+  color: white;
+}
+.check-btn {
+  background: rgb(55, 235, 70);
+}
+li {
+  padding: 0 1.5rem;
+}
+.bx {
+  pointer-events: none;
+}
+.check {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
