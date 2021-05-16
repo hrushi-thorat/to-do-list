@@ -38,7 +38,10 @@ function deleteCheck(e){
      if(item.classList[0]==="remove-btn"){
          const del=item.parentElement;
          del.classList.add("fall");
-         del.remove();
+         del.addEventListener("transitionend",function(){
+             del.remove();
+         })
+         
      }
      if(item.classList[0]==="check-btn"){
          const che=item.parentElement;
